@@ -69,7 +69,7 @@
                 class="button_icon fa fa-file-pdf"></i><span> Paper (4.2 MB) </span></a>
             <a class="button_resources" href="https://github.com/jmoraispk/LocalizationDigitalTwins"><i
                 class="button_icon fa fa-code"></i><span>
-                Code (Github) </span></a>
+                Code </span></a>
             <a class="button_resources" href="https://arxiv.org/abs/2403.09614"><i
                 class="button_icon fa fa-quote-right"></i><span> Cite </span></a>
           </div>
@@ -220,57 +220,66 @@
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
           <h2 id="Figures" class="py-4">Figures</h2>
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 [&_figure]:mb-3 [&_figure]:cursor-pointer overflow-hidden">
-            <figure style="border-radius: 5px" data-fancybox="gallery" data-caption="Fig. 4. Impact of several reporting parameter combinations on localization
-                error for position 1 (LoS). RSS measurements in more beams (|K|), subbands
-                (|B|) and repeated measurements across time (|T |) individually and jointly
-                improve fingerprinting accuracy" data-src="./gallery/17.jpg">
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 [&_figure]:mb-0 [&_figure]:cursor-pointer overflow-hidden">
+            <figure style="border-radius: 5px" data-fancybox="gallery" data-caption="Impact of several reporting parameter combinations on localization
+            error for position 1 (LoS). RSS measurements in more beams (|K|), subbands
+            (|B|) and repeated measurements across time (|T |) individually and jointly
+            improve fingerprinting accuracy.
+            " data-src="./gallery/17.jpg">
               <img src="./gallery/17.jpg" alt="" class="rounded-md w-full h-auto" loading="lazy" />
             </figure>
-            <figure style="border-radius: 5px" data-fancybox="gallery" data-src="./gallery/18.jpg" data-caption="Fig. 1. A real-world communication system and its digital replica [10]. For the common case of downlink measurements, the network sends reference signals
-                using certain beams in specific subbands and time instants and the user reports back the received power measurements.
+            <figure style="border-radius: 5px" data-fancybox="gallery" data-src="./gallery/18.jpg" data-caption="Impact of reporting parameter combinations on localization error for
+            position 2 (NLoS). Localization error seems particularly affected by more
+            RSS measurements in distinct beams.
                 ">
               <img src="./gallery/18.jpg" alt="" class="rounded-md w-full h-auto" loading="lazy" />
             </figure>
 
-            <figure style="border-radius: 5px" data-fancybox="gallery" data-caption="Fig. 5. Impact of reporting parameter combinations on localization error for
-                position 2 (NLoS). Localization error seems particularly affected by more
-                RSS measurements in distinct beams.
-                
+            <figure style="border-radius: 5px" data-fancybox="gallery" data-caption="Localization accuracy for every possible user position in a 2D grid at
+            a height of 2 meters (6.5 feet). The simulation was performed for the proof of
+            concept scenario with 6 buildings using the baseline reporting parameters: no.
+            beams |K| = 1, no. subbands |B| = 1, and no. of reports in time |T | = 1. BS
+            uses a 64-antenna ULA with position and orientation represented. Positions
+            1 (50m from BS, LoS) and position 2 (80m from BS, NLoS) are used next
             " data-src="./gallery/66.jpg">
               <img src="./gallery/66.jpg" alt="" class="rounded-md w-full h-auto" loading="lazy" />
             </figure>
 
-            <!-- <figure style=" border-radius: 5px" data-fancybox="gallery"
-              data-src="https://#.me/publications/primary-space-cv/figures/fig_multidimensional.jpg"
-              data-caption="Comparison between our approach (left column), Monte Carlo, and previous related work in four different scenes (with increasing dimensionality), at equal number of samples (64 spp). The scenes feature several distributed effects including motion blur, depth-of-field and soft shadows. In all cases, Monte Carlo produces renders with high variance, while Hachisuka et al.'s approach achieves good results in smooth domains, but tends to overblur the sharp regions of the scene. In contrast, our unbiased method outperforms previous work keeping the high contrast areas sharp.">
-              <img src="https://#.me/publications/primary-space-cv/figures/fig_multidimensional.jpg" alt=""
-                class="rounded-md w-full h-auto" />
-            </figure> -->
-
-           
-          </div>
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 [&_figure]:mb-3 [&_figure]:cursor-pointer overflow-hidden">
-            <figure style="border-radius: 5px" data-fancybox="gallery" data-src="./gallery/64.jpg"
-            data-caption="Diagram of end-to-end fingerprinting-based localization system leveraging an offline-built digital twin. The twin is built from ray tracing simulations on
-              all possible user locations on a precise 3D map of the deployment. The twin generates RF Maps for RSS values (or other simulated data) for different beams
-              and subbands, thus replacing the human effort of real-world data collections. These DT RF Maps can be updated or calibrated with real-world information.
-              The maps are used in near real-time with online real-world user measurements to extract location probabilities and make a localization estimate decision">
-            <img src="./gallery/64.jpg" alt="" class="rounded-md w-full h-[200px]" loading="lazy" />
+            <figure style="border-radius: 5px" data-fancybox="gallery" data-src="./gallery/local1.jpg"
+            data-caption="A real-world communication system and its digital replica [10]. For the common case of downlink measurements, the network sends reference signals
+            using certain beams in specific subbands and time instants and the user reports back the received power measurements.
+            ">
+            <img src="./gallery/local1.jpg" alt="" class="rounded-md w-full h-[200px]" loading="lazy" />
           </figure>
 
-          <figure style="border-radius: 5px" data-fancybox="gallery" data-caption="Localization accuracy for every possible user position in a 2D grid at
-              a height of 2 meters (6.5 feet). The simulation was performed for the proof of
-              concept scenario with 6 buildings using the baseline reporting parameters: no.
-              beams |K| = 1, no. subbands |B| = 1, and no. of reports in time |T | = 1. BS
-              uses a 64-antenna ULA with position and orientation represented. Positions
-              1 (50m from BS, LoS) and position 2 (80m from BS, NLoS) are used next." data-src="./gallery/65.jpg">
-            <img src="./gallery/65.jpg" alt="" class="rounded-md w-full h-[200px]" loading="lazy" />
+          <figure style="border-radius: 5px" data-fancybox="gallery" data-caption="A real-world communication system and its digital replica [10]. For the common case of downlink measurements, the network sends reference signals
+          using certain beams in specific subbands and time instants and the user reports back the received power measurements.
+          " data-src="./gallery/local2.jpg">
+            <img src="./gallery/local2.jpg" alt="" class="rounded-md w-full h-[200px]" loading="lazy" />
           </figure>  
+
+          <figure style="border-radius: 5px" data-fancybox="gallery" data-src="./gallery/local3.jpg"
+          data-caption="Diagram of end-to-end fingerprinting-based localization system leveraging an offline-built digital twin. The twin is built from ray tracing simulations on
+          all possible user locations on a precise 3D map of the deployment. The twin generates RF Maps for RSS values (or other simulated data) for different beams
+          and subbands, thus replacing the human effort of real-world data collections. These DT RF Maps can be updated or calibrated with real-world information.
+          The maps are used in near real-time with online real-world user measurements to extract location probabilities and make a localization estimate decision">
+          <img src="./gallery/local3.jpg" alt="" class="rounded-md w-full h-[200px]" loading="lazy" />
+        </figure>
+
+        <figure style="border-radius: 5px" data-fancybox="gallery" data-caption="Diagram of end-to-end fingerprinting-based localization system leveraging an offline-built digital twin. The twin is built from ray tracing simulations on
+        all possible user locations on a precise 3D map of the deployment. The twin generates RF Maps for RSS values (or other simulated data) for different beams
+        and subbands, thus replacing the human effort of real-world data collections. These DT RF Maps can be updated or calibrated with real-world information.
+        The maps are used in near real-time with online real-world user measurements to extract location probabilities and make a localization estimate decision" data-src="./gallery/local4.jpg">
+          <img src="./gallery/local4.jpg" alt="" class="rounded-md w-full h-[200px]" loading="lazy" />
+        </figure>  
           </div>
+
+
           <h2 id="Figures" class="pt-8">Bibtex</h2>
           <div class="code-container">
             <div class="copy-btn"><i class="fa-regular fa-copy"></i></div>
